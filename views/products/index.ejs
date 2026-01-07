@@ -1,0 +1,33 @@
+<h1>Liste des produits</h1>
+
+<a href="/products/create" class="btn btn-success mb-3">
+  ➕ Ajouter un produit
+</a>
+
+<% if (products.length === 0) { %>
+  <div class="alert alert-info">
+    Aucun produit disponible.
+  </div>
+<% } %>
+
+<ul class="list-group">
+  <% products.forEach(product => { %>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <strong><%= product.name %></strong>
+
+      <div>
+        <a href="/products/<%= product._id %>" class="btn btn-info btn-sm">
+          👁 Voir
+        </a>
+        <a href="/products/edit/<%= product._id %>" class="btn btn-warning btn-sm">
+          ✏️ Modifier
+        </a>
+        <form action="/products/<%= product._id %>/delete" method="POST" style="display:inline;">
+          <button class="btn btn-danger btn-sm">
+            🗑 Supprimer
+          </button>
+        </form>
+      </div>
+    </li>
+  <% }) %>
+</ul>

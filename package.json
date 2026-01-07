@@ -1,0 +1,19 @@
+{
+  "name": "crud-express-mongodb",
+  "version": "1.0.0",
+  "description": "Application CRUD avec Express, MongoDB et Mongoose",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.1",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.0.3"
+  }
+}

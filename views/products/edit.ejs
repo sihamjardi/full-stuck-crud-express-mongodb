@@ -1,0 +1,18 @@
+<h1>Modifier le produit</h1>
+
+<form method="POST" action="/products/<%= product._id %>/update">
+
+  <label>Nom</label>
+  <input name="name" class="form-control" value="<%= product.name %>" required>
+
+  <label>Prix</label>
+  <input name="price" type="number" class="form-control" value="<%= product.price %>" required>
+
+  <button class="btn btn-warning mt-3">
+    🔄 Mettre à jour
+  </button>
+
+  <a href="/products" class="btn btn-secondary mt-3">
+    ↩ Retour
+  </a>
+</form>

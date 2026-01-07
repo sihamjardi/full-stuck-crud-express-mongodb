@@ -1,0 +1,180 @@
+/* ===============================
+   GLOBAL
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #e9eef5, #f8f9fa);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  min-height: 100vh;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+  background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+/* ===============================
+   CONTENU PRINCIPAL
+================================ */
+.container {
+  background: #ffffff;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   TITRES
+================================ */
+h1 {
+  font-weight: 600;
+  margin-bottom: 25px;
+  border-left: 5px solid #0d6efd;
+  padding-left: 15px;
+}
+
+/* ===============================
+   LISTE DES PRODUITS
+================================ */
+.list-group-item {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  background: #f9fafb;
+  transition: all 0.25s ease;
+}
+
+.list-group-item:hover {
+  background: #eef3ff;
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   BOUTONS (STYLE UNIFIÉ)
+================================ */
+.btn {
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Couleurs boutons */
+.btn-success {
+  background: linear-gradient(90deg, #198754, #157347);
+  border: none;
+}
+
+.btn-warning {
+  background: linear-gradient(90deg, #ffc107, #e0a800);
+  color: #fff;
+  border: none;
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #dc3545, #bb2d3b);
+  border: none;
+}
+
+.btn-info {
+  background: linear-gradient(90deg, #0dcaf0, #0bbcd6);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+  border: none;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  border: none;
+}
+
+/* ===============================
+   FORMULAIRES
+================================ */
+form label {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+/* ===============================
+   PAGE DETAILS
+================================ */
+.product-details {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.product-details span {
+  font-weight: bold;
+}
+
+/* ===============================
+   ALERTES
+================================ */
+.alert {
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 500;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
